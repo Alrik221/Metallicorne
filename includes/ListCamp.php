@@ -8,7 +8,7 @@
 		<td>Camp address</td>
 		<td>Camp city</td>
 	</tr>
-	<form method="POST" action="includes/ServicesCamp.php">
+	<form method="POST" action="ServicesCamp.php">
 	<?php
 	// Print camps from database
 	$stmt=$pdo->query('SELECT * FROM camp');
@@ -20,6 +20,7 @@
 				<td>${r[3]}</td> 
 				<td><input type=\"checkbox\" name=\"choix\" value=\"${r[0]}\"></td>
 				</tr>";
+				
 		}
 	}
 
