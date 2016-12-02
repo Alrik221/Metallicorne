@@ -18,6 +18,7 @@
 
 			<div class="col-1-4">
 				<div id='contact'>
+					<a tittle="Gocontact"	href="contact.php">
 					<h1>Contact</h1>
 				</div><!--fin contact-->
 			</div>
