@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="public/reset.css" />
 		<link rel="stylesheet" type="text/css" href="public/simplegrid.css" />
 		<link rel="stylesheet" type="text/css" href="public/style_header.css" />
+		<link rel="stylesheet" type="text/css" href="public/style.css" />
 	</head>
 	<?php
 	//Connection to the database
@@ -15,27 +16,31 @@
 	?>
 	<body>
 		<?php include "includes/header.php" ?>
-		<table>
-		<?php
-				// Print data from database
-		if(!empty($_GET["id"])){
-			$stmt=$pdo->query("SELECT service.nom_service,service.description,proposition.heuredeb,proposition.heurefin FROM proposition,service WHERE proposition.id_ser=service.id_service and ".$_GET['id']."=proposition.ID_Cp");
-			if($stmt->rowCount()>0){
-				while($r=$stmt->fetch(PDO::FETCH_NUM)){
-					echo "<tr>
-							<td>${r[0]}</td>
-						</tr>
-						<tr>
-							<td>${r[1]}</td>
-						</tr>
-						<tr>
-							<td>Ce service est disponible de ${r[2]} heure à ${r[3]} heure</td>
-						</tr>";
+		<div id="conteneur">
+			
+			<table>
+			<?php
+					// Print data from database
+			if(!empty($_GET["id"])){
+				$stmt=$pdo->query("SELECT service.nom_service,service.description,proposition.heuredeb,proposition.heurefin FROM proposition,service WHERE proposition.id_ser=service.id_service and ".$_GET['id']."=proposition.ID_Cp");
+				if($stmt->rowCount()>0){
+					while($r=$stmt->fetch(PDO::FETCH_NUM)){
+						echo "<tr>
+								<td><h1>${r[0]}</h1></td>
+							</tr>
+							<tr>
+								<td>${r[1]}</td>
+							</tr>
+							<tr>
+								<td>>Ce service est disponible de ${r[2]} heure à ${r[3]} heure</td>
+							</tr>";
+					}
 				}
 			}
-		}
+			
+			?>
+			</table>
+		</div>
 		
-		?>
-		</table>
 	</body>
 </html>

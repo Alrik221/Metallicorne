@@ -1,0 +1,11 @@
+#conteneur{
+	margin:auto;
+	width:60%;
+	border: solid #B22222 5px ;
+	border-radius:10px;
+}
+
+#contenu{
+	margin-left:20%;
+	
+}

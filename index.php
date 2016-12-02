@@ -7,11 +7,15 @@
 		<link rel="stylesheet" type="text/css" href="public/simplegrid.css" />
 		<link rel="stylesheet" type="text/css" href="public/reset.css" />
 		<link rel="stylesheet" type="text/css" href="public/style_header.css" />
+		<link rel="stylesheet" type="text/css" href="public/style.css" />
 		
 	</head>
 	<body>
 		<?php include "includes/header.php" ?>
 		
-		<?php include "includes/homepage.php" ?>
+		<div id="conteneur">
+			<?php include "includes/homepage.php" ?>
+		</div>
+	</body>
 	</body>
 </html> 
