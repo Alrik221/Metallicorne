@@ -9,5 +9,7 @@
 	</head>
 	<body>
 		<?php include "views/header.php" ?>
+
+		<?php include("includes/homepage.php"); ?>
 	</body>
-</html> 
+</html>
