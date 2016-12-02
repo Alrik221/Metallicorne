@@ -6,8 +6,10 @@
 		<meta charset='UTF-8'>
 		<link rel="stylesheet" type="text/css" href="public/simplegrid.css" />
 		<link rel="stylesheet" type="text/css" href="public/reset.css" />
+		<link rel="stylesheet" type="text/css" href="public/style_header.css" />
+		<link rel="stylesheet" type="text/css" href="public/style_header.css" />
 	</head>
 	<body>
-		<?php include "views/header.php" ?>
+		<?php include "includes/header.php" ?>
 	</body>
 </html> 

@@ -2,7 +2,10 @@
 <html>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<link href="../public/style_service.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../public/style_header.css" />
+	<link rel="stylesheet" type="text/css" href="../public/simplegrid.css" />
 <body>
+	<?php include "../includes/header.php" ?>
 	<form method="post" action="ajout.php">
 		<div class="form-group">
 	    	<label for="exampleInputEmail1">Nom du camp</label>
