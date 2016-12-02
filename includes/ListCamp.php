@@ -3,7 +3,7 @@
 	<tr>
 		<h1>Choose a camp if you want more details</h1>
 	</tr>
-	
+
 	<tr class="danger">
 		<td>Camp name</td>
 		<td>Camp address</td>
@@ -17,7 +17,7 @@
 			echo "<tr>
 				<td><a href='ServicesCamp.php?id=${r[0]}'>${r[1]}</a></td>
 				<td>${r[2]}</td>
-				<td>${r[3]}</td> 
+				<td>${r[3]}</td>
 				</tr>";
 		}
 	}

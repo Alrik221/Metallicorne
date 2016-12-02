@@ -9,7 +9,7 @@
 	</head>
 	<?php
 	//Connection to the database
-	$pdo=new PDO("mysql:host=localhost;port=3306;dbname=metallicorne","root","");
+	$pdo=new PDO("mysql:host=localhost;port=22;dbname=Metallicorne","root","iut");
 	$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 	$pdo->query("SET NAMES UTF8");
 	?>
@@ -34,7 +34,7 @@
 				}
 			}
 		}
-		
+
 		?>
 		</table>
 	</body>

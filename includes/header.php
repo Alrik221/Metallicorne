@@ -1,6 +1,7 @@
 <!--HEADER-->
 <header>
 	<div id='menu'>
+		<a href="index.php"> <img src="image/Logo_Licorne.png" alt="Logo Licorne" /> </a>
 		<div class="grid grid-pad" >
 			<div class="col-1-4">
 				<div id='home'>
@@ -18,8 +19,8 @@
 
 			<div class="col-1-4">
 				<div id='contact'>
-					<a tittle="Gocontact"	href="contact.php">
-					<h1>Contact</h1>
+					<a tittle="Gocontact" href="contact.php"/>
+					<h1>Contact</h1></a>
 				</div><!--fin contact-->
 			</div>
 		</div>
