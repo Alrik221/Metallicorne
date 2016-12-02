@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Ven 02 Décembre 2016 à 00:14
+-- Généré le :  Ven 02 Décembre 2016 à 03:56
 -- Version du serveur :  5.5.53-0+deb8u1
 -- Version de PHP :  5.6.27-0+deb8u1
 
@@ -30,16 +30,18 @@ CREATE TABLE IF NOT EXISTS `camp` (
 `ID_Camp` smallint(6) NOT NULL,
   `Nom_Camp` varchar(100) NOT NULL,
   `Adresse_Camp` varchar(250) NOT NULL,
-  `Ville_Camp` varchar(250) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+  `Ville_Camp` varchar(250) NOT NULL,
+  `Telephone` varchar(11) NOT NULL
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `camp`
 --
 
-INSERT INTO `camp` (`ID_Camp`, `Nom_Camp`, `Adresse_Camp`, `Ville_Camp`) VALUES
-(1, 'Jungle', '45 rue du bled', 'Paris'),
-(2, 'Paradis', '87 rue de la Paix', 'Calai');
+INSERT INTO `camp` (`ID_Camp`, `Nom_Camp`, `Adresse_Camp`, `Ville_Camp`, `Telephone`) VALUES
+(1, 'Jungle', '45 rue du bled', 'Paris', '+3332281257'),
+(2, 'Paradis', '87 rue de la Paix', 'Calai', '+3344524865'),
+(3, 'Deleck', '63 impasse du champs', 'Rouen', '+3365484326');
 
 -- --------------------------------------------------------
 
@@ -53,6 +55,17 @@ CREATE TABLE IF NOT EXISTS `Proposition` (
   `HeureDeb` time DEFAULT NULL,
   `HeureFin` time DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `Proposition`
+--
+
+INSERT INTO `Proposition` (`ID_Cp`, `ID_Ser`, `HeureDeb`, `HeureFin`) VALUES
+(1, 6, '08:00:00', '19:00:00'),
+(1, 7, '08:00:00', '19:00:00'),
+(1, 8, '08:00:00', '19:00:00'),
+(2, 1, '09:00:00', '15:00:00'),
+(2, 8, '08:00:00', '19:00:00');
 
 -- --------------------------------------------------------
 
@@ -108,7 +121,7 @@ ALTER TABLE `service`
 -- AUTO_INCREMENT pour la table `camp`
 --
 ALTER TABLE `camp`
-MODIFY `ID_Camp` smallint(6) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `ID_Camp` smallint(6) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT pour la table `service`
 --
