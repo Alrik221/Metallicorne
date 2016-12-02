@@ -8,11 +8,15 @@
 		<link rel="stylesheet" type="text/css" href="public/simplegrid.css" />
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="public/style_header.css" />
-		
+
 	</head>
 	<?php
 	//Connection to the database
+<<<<<<< HEAD
 	$pdo=new PDO("mysql:host=localhost;port=3306;dbname=Metallicorne","root","");
+=======
+	$pdo=new PDO("mysql:host=localhost;port=22;dbname=Metallicorne","root","iut");
+>>>>>>> 6a7af55ecb28b13c899ff08ad2424473af85147e
 	$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 	$pdo->query("SET NAMES UTF8");
 	?>
