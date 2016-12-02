@@ -1,0 +1,69 @@
+/* STYLE DU HEADER */
+
+#menu{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#menu div{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:30px;
+	font-family:Arial;
+	color:#FFFFFF;
+	text-align:center;
+}
+
+
+#menu div:active{
+	background-color: #FFFFFF;
+	color:#B22222;
+}
+
+#menu a:link{
+	text-decoration: none;
+	color:#FFFFFF;
+}
+
+#home{
+	float:left;
+	width:100%;
+	background-color:#B22222; 
+	border: solid #B22222 5px ;
+	border-radius:10px;
+}
+
+#find{
+	float:left;
+	width: 100%;
+	background-color:#B22222;
+	border: solid #B22222 5px ;
+	border-radius:10px;
+
+	
+}
+
+#contact{
+	float:left;
+	width: 100%;
+	background-color:#B22222;
+	border: solid #B22222 5px ;
+	border-radius:10px;
+
+}
+
+#home:hover{
+	background-color:#8B0000;
+}
+
+#find:hover{
+	background-color:#8B0000;
+}
+
+#contact:hover{
+	background-color:#8B0000;
+}
+
+
