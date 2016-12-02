@@ -10,14 +10,14 @@
 	</head>
 	<?php
 	//Connection to the database
-	$pdo=new PDO("mysql:host=localhost;port=3306;dbname=metallicorne","root","");
+	$pdo=new PDO("mysql:host=localhost;port=22;dbname=metallicorne","root","iut");
 	$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 	$pdo->query("SET NAMES UTF8");
 	?>
 	<body>
 		<?php include "includes/header.php" ?>
 		<div id="conteneur">
-			
+
 			<table>
 			<?php
 					// Print data from database
@@ -37,10 +37,10 @@
 					}
 				}
 			}
-			
+
 			?>
 			</table>
 		</div>
-		
+
 	</body>
 </html>

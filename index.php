@@ -8,14 +8,15 @@
 		<link rel="stylesheet" type="text/css" href="public/reset.css" />
 		<link rel="stylesheet" type="text/css" href="public/style_header.css" />
 		<link rel="stylesheet" type="text/css" href="public/style.css" />
-		
+
 	</head>
 	<body>
 		<?php include "includes/header.php" ?>
-		
+
 		<div id="conteneur">
 			<?php include "includes/homepage.php" ?>
 		</div>
+		<a href="index.php"> <img src="image/LicornePhostshop.png" alt="bg Licorne" /> </a>
 	</body>
 	</body>
 </html> 
