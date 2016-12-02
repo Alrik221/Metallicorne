@@ -5,21 +5,21 @@
 			<div class="col-1-4">
 				<div id='home'>
 					<a tittle="Gohome"	href="index.php">
-					<h1>Home</h1>
+					<h1>Home</h1></a>
 				</div><!--fin home-->
 			</div>
 
 			<div class="col-1-2">
 				<div id='find'>
 					<a tittle="Gofind"	href="Find.php">
-					<h1>Find a camp</h1>
+					<h1>Find a camp</h1></a>
 				</div><!--fin find-->
 			</div>
 
 			<div class="col-1-4">
 				<div id='contact'>
 					<a tittle="Gocontact"	href="contact.php">
-					<h1>Contact</h1>
+					<h1>Contact</h1></a>
 				</div><!--fin contact-->
 			</div>
 		</div>
